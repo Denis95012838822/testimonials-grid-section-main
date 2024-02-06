@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+:root{
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+    body {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        background-color: var(--Light-grayish-blue);
+    }
+
+.main__container{
+    width: 80%;
+    background-color: blue;
+    margin: 100px 0;
+    background-color: var(--Light-grayish-blue);
+}
+.div__container{
+   display: grid;
+   grid-template-areas: 
+   "C1  C1  C1  C1  C1  C1 C1 C2  C2  C3"
+   "C4  C4  C5  C5  C5  C5 C5 C5  C5  C3";
+   
+}
+.container{
+    margin: 15px;
+    padding: 20px;
+}
+
+
+.card__daniel{
+    position: relative;
+    grid-area: C1;
+    background-color: var(--Moderate-violet);
+    border-radius: 10px;  
+    background-image: url('./images/bg-pattern-quotation.svg'); 
+    background-size: contain;
+}
+
+.card__jonathan{
+    grid-area: C2;
+    background-color: var(--Very-dark-grayish-blue);
+    border-radius: 10px;  
+}
+.card__jeanette{
+    grid-area: C4;
+    background-color: var(--White);
+    border-radius: 10px;  
+}
+.card__Patrick{
+    grid-area: C5;
+    background-color: var(--Very-dark-blackish-blue);
+    border-radius: 10px;  
+}
+.card__kira{
+    grid-area: C3;
+    background-color: var(--White);
+    border-radius: 10px;  
+}
+.foto__texto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.verificado{
+    margin-left: 25px;
+}
+.img__Daniel{
+    width: 8%;
+    border-radius: 50%;
+    border: 2px solid hsla(263, 68%, 62%, 0.877);
+}
+.img__Jonathan{
+    width: 15%;
+    border-radius: 50%;
+}
+.img__jeanette{
+    width: 15%;
+    border-radius: 50%;
+}
+.img__Patrick{
+    width: 8%;
+    border-radius: 50%;
+    border: 2px solid hsla(263, 68%, 62%, 0.877);
+}
+.img__kira{
+    width: 15%;
+    border-radius: 50%;
+}
+.nombre__Daniel{
+    color:  hsl(0, 0%, 81%);
+    font-size: 13px;
+}
+
+.subtitulo__Daniel{
+    color: hsla(0, 0%, 81%, 0.8);
+    font-size: 13px;
+}
+.encabezado__Daniel{
+    color:  hsl(0, 0%, 81%);
+    font-family: 'Barlow Semi Condensed';
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+.parrafo__Daniel{
+    color: hsla(0, 0%, 81%, 0.8);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.nombre__Jonathan{
+    color:  hsl(0, 0%, 81%);
+    font-size: 13px;
+}
+.subtitulo__Jonathan{
+    color: hsla(0, 0%, 81%, 0.8);
+    font-size: 13px;   
+}
+.encabezado__Jonathan{
+    color:  hsl(0, 0%, 81%);
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+.parrafo__Jonathan{
+    color: hsla(0, 0%, 81%, 0.8);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.nombre__jeanette{
+    font-size: 13px;
+}
+.subtitulo__jeanette{
+    color:  hsla(217, 19%, 35%, 0.7);
+    font-size: 13px; 
+}
+.encabezado__jeanette{
+    color: hsla(217, 30%, 14%, 0.7);
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+.parrafo__jeanette{
+    color:  hsla(217, 19%, 35%, 0.5);
+    font-size: 13px; 
+    line-height: 1.5;
+}
+.nombre__Patrick{
+    color:  hsl(0, 0%, 81%);
+    font-size: 13px;
+}
+
+.subtitulo__Patrick{
+    color: hsla(0, 0%, 81%, 0.8);
+    font-size: 13px;
+}
+.encabezado__Patrick{
+    color:  hsl(0, 0%, 81%);
+    font-family: 'Barlow Semi Condensed';
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+.parrafo__Patrick{
+    color: hsla(0, 0%, 81%, 0.8);
+    font-size: 13px;
+    line-height: 1.5;
+}
+.nombre__kira{
+    font-size: 13px;
+}
+.subtitulo__kira{
+    color:  hsla(217, 19%, 35%, 0.5);
+    font-size: 13px; 
+}
+.encabezado__kira{
+    color:  hsla(217, 30%, 14%, 0.7);
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+.parrafo__kira{
+    color:  hsla(217, 19%, 35%, 0.5);
+    font-size: 13px; 
+    line-height: 1.5;
+}
+@media (max-width:900px){
+    .main__container{
+        width: 100%;
+        margin: 20px;
+    }
+    .div__container{
+        display: flex;
+        flex-direction: column;
+    }
+    .img__Daniel{
+        width: 20%;
+    }
+    .img__Patrick{
+        width: 20%;
+    }
+}
